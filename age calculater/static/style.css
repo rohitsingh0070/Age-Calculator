@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Header Styles */
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(#007BFF, #0056b3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Form Label Styles */
+label {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+    color: #555;
+}
+
+/* Input Styles */
+input[type="date"] {
+    padding: 12px;
+    font-size: 1em;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input[type="date"]:focus {
+    outline: none;
+    border: 2px solid #0056b3;
+    box-shadow: 0 0 8px rgba(0, 91, 187, 0.4);
+}
+
+/* Button Styles */
+button {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s, background 0.3s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #003f88);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Result Box Styles */
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f9f9f9, #ececec);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.5s ease-out;
+}
+
+.result h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.result p {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
